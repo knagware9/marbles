@@ -18,7 +18,6 @@
 				"event_url": "grpc://blockchain-org1peer1:5011",
 				"msp_id": "Org1MSP",
 				"tls_certificate": "cert_1"
-				}
 			},
 			"chaincodes": {
 				"marbles": "v1.0"
