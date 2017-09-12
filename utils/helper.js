@@ -45,18 +45,23 @@ module.exports = function (config_filename, logger) {
 			if (peers && peers[0]) {
 				return peers[0];
 			}
+			
+		logger.info('Peer details 1', peers[0]);
 		}
 		throw new Error('Orderer not found for this channel', ch);
 	};
 
 	// get a peer object
 	helper.getPeer = function (key) {
+		logger.info('Peer details 2', key);
 		if (key === undefined || key == null) {
 			throw new Error('Peer key not passed');
 		}
 		else {
 			if (helper.creds.peers) {
 				return helper.creds.peers[key];
+				logger.info('Peer details 3', helper.creds.peers[key]);
+
 			}
 			else {
 				return null;
@@ -66,6 +71,7 @@ module.exports = function (config_filename, logger) {
 
 	// get a peer's grpc url
 	helper.getPeersUrl = function (key) {
+		logger.info('Peer details 4', key);
 		if (key === undefined || key == null) {
 			throw new Error('Peer key not passed');
 		}
