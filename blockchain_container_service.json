@@ -42,7 +42,9 @@
 		],
 		"app": {
 			"channels": "channel1",
-			"chaincodes": "marbles": "v1.0",
+			"chaincodes": {
+			"marbles": "v1.0"
+			},
 			"block_delay": 10000
 		},
 		"tls_certificates": {
