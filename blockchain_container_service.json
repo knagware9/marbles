@@ -13,11 +13,11 @@
 				"fabric-orderer"
 			],
 			"peers": {
-				"fabric-peer-org1": {
-					"endorsingPeer": true,
-					"chaincodeQuery": true,
-					"ledgerQuery": true,
-					"eventSource": true
+				"name": "blockchain-org1peer1",
+				"discovery_url": "grpc://blockchain-org1peer1:5010",
+				"event_url": "grpc://blockchain-org1peer1:5011",
+				"msp_id": "Org1MSP",
+				"tls_certificate": "cert_1"
 				}
 			},
 			"chaincodes": {
