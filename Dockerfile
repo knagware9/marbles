@@ -5,5 +5,3 @@ WORKDIR /marbles
 RUN rm -rf node_modules && npm install && npm install -g gulp
 ADD marbles_container_service.json /marbles/config/marbles_local.json
 ADD blockchain_container_service.json /marbles/config/.
-ADD prepare_config.sh /marbles/.
-RUN chmod +x /marbles/prepare_config.sh
