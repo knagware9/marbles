@@ -41,9 +41,8 @@
 			}
 		],
 		"app": {
-			"channel_id": "channel1",
-			"chaincode_id": "marbles",
-			"chaincode_version": "v1.0",
+			"channels": "channel1",
+			"chaincodes": "marbles": "v1.0",
 			"block_delay": 10000
 		},
 		"tls_certificates": {
