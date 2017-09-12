@@ -2,6 +2,25 @@
 	"credentials": {
 		"network_id": "ibm-container-service",
 		"network_name": "experimental",
+		"channels": {
+		"channel1": {
+			"orderers": [
+				"fabric-orderer"
+			],
+			"peers": {
+				"fabric-peer-org1": {
+					"endorsingPeer": true,
+					"chaincodeQuery": true,
+					"ledgerQuery": true,
+					"eventSource": true
+				}
+			},
+			"chaincodes": {
+				"marbles": "v1.0"
+			},
+			"x-blockDelay": 10000
+		}
+},
 		"orderers": [
 			{
 				"name": "blockchain-orderer",
@@ -40,13 +59,6 @@
 				"tls_certificate": "cert_1"
 			}
 		],
-		"app": {
-			"channels": "channel1",
-			"chaincodes": {
-			"marbles": "v1.0"
-			},
-			"block_delay": 10000
-		},
 		"tls_certificates": {
 			"cert_1": {
 				"common_name": null,
