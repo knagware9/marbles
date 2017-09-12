@@ -36,10 +36,10 @@
 				"blockchain-ca"
 			],
 			"adminPrivateKey": {
-				"path": "org1_admin_key.pem"
+				"path": "./marbles/config/org1_admin_key.pem"
 			},
 			"signedCert": {
-				"path": "org1_admin_cert.pem"
+				"path": "./marbles/config/org1_admin_cert.pem"
 			}
 		}
 	},
